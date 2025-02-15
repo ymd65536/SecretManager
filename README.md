@@ -39,5 +39,5 @@ gcloud services enable secretmanager.googleapis.com
 ## 環境変数をセット
 
 ```bash
-export PROJECT_ID=<PROJECT_ID>
+PROJECT_ID=`gcloud config list --format 'value(core.project)'` && echo $PROJECT_ID
 ```
